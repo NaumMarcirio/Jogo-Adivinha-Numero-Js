@@ -1,0 +1,63 @@
+:root {
+  --fonte-principal: "Poppins", sans-serif;
+  --cor-fundo: #4f709c;
+  --cor-fonte: #f0f0f0;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-fonte);
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.msg {
+  font-size: 1.5rem;
+}
+
+.box {
+  border: 2px solid;
+  padding: 4rem;
+  font-size: 5rem;
+}
+
+.msg-chute {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.btnReload {
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid var(--cor-fonte);
+  color: var(--cor-fonte);
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.btnReload:hover {
+  background-color: var(--cor-fonte); /* Cor de fundo mais sutil no hover */
+  color: var(--cor-fundo); /* Cor do texto no hover */
+  transform: scale(1.05);
+  font-weight: bold;
+  cursor: pointer;
+}
